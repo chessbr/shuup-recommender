@@ -1,7 +1,0 @@
-jupyter==1.0.0
-matplotlib
-pytest
-pytest-django
-flake8
-isort
-pytest-cov
