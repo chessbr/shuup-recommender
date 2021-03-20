@@ -4,61 +4,213 @@
 #
 #    pip-compile --output-file dev-requirements.txt dev-requirements.in
 #
-appnope==0.1.0            # via ipython
-attrs==17.4.0             # via pytest
-bleach==2.1.2             # via nbconvert
-coverage==4.5             # via pytest-cov
-cycler==0.10.0            # via matplotlib
-decorator==4.2.1          # via ipython, traitlets
-entrypoints==0.2.3        # via nbconvert
+attrs==17.4.0
+    # via pytest
+backports-abc==0.5
+    # via tornado
+backports.functools-lru-cache==1.6.1
+    # via matplotlib
+backports.shutil-get-terminal-size==1.0.0
+    # via ipython
+bleach==2.1.2
+    # via nbconvert
+certifi==2020.12.5
+    # via tornado
+configparser==4.0.2
+    # via
+    #   entrypoints
+    #   flake8
+coverage==4.5
+    # via pytest-cov
+cycler==0.10.0
+    # via matplotlib
+decorator==4.2.1
+    # via
+    #   ipython
+    #   traitlets
+entrypoints==0.2.3
+    # via nbconvert
+enum34==1.1.10
+    # via
+    #   flake8
+    #   traitlets
 flake8==3.5.0
-html5lib==1.0.1           # via bleach
-ipykernel==4.8.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
-ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
-ipython==6.2.1            # via ipykernel, ipywidgets, jupyter-console
-ipywidgets==7.1.1         # via jupyter
+    # via -r dev-requirements.in
+funcsigs==1.0.2
+    # via pytest
+functools32==3.2.3.post2
+    # via jsonschema
+futures==3.3.0
+    # via isort
+html5lib==1.0.1
+    # via bleach
+ipykernel==4.8.0
+    # via
+    #   ipywidgets
+    #   jupyter
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
+ipython-genutils==0.2.0
+    # via
+    #   nbformat
+    #   notebook
+    #   qtconsole
+    #   traitlets
+ipython==5.10.0
+    # via
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-console
+ipywidgets==7.1.1
+    # via jupyter
 isort==4.3.2
-jedi==0.11.1              # via ipython
-jinja2==2.10              # via nbconvert, notebook
-jsonschema==2.6.0         # via nbformat
-jupyter-client==5.2.2     # via ipykernel, jupyter-console, notebook, qtconsole
-jupyter-console==5.2.0    # via jupyter
-jupyter-core==4.4.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
+    # via -r dev-requirements.in
+jinja2==2.11.3
+    # via
+    #   nbconvert
+    #   notebook
+jsonschema==2.6.0
+    # via nbformat
+jupyter-client==5.2.2
+    # via
+    #   ipykernel
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
+jupyter-console==5.2.0
+    # via jupyter
+jupyter-core==4.4.0
+    # via
+    #   jupyter-client
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
 jupyter==1.0.0
-markupsafe==1.0           # via jinja2
+    # via -r dev-requirements.in
+markupsafe==1.0
+    # via jinja2
 matplotlib==2.1.2
-mccabe==0.6.1             # via flake8
-mistune==0.8.3            # via nbconvert
-nbconvert==5.3.1          # via jupyter, notebook
-nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
-notebook==5.4.0           # via jupyter, widgetsnbextension
-numpy==1.14.0             # via matplotlib
-pandocfilters==1.4.2      # via nbconvert
-parso==0.1.1              # via jedi
-pexpect==4.3.1            # via ipython
-pickleshare==0.7.4        # via ipython
-pluggy==0.6.0             # via pytest
-prompt-toolkit==1.0.15    # via ipython, jupyter-console
-ptyprocess==0.5.2         # via pexpect, terminado
-py==1.5.2                 # via pytest
-pycodestyle==2.3.1        # via flake8
-pyflakes==1.6.0           # via flake8
-pygments==2.2.0           # via ipython, jupyter-console, nbconvert, qtconsole
-pyparsing==2.2.0          # via matplotlib
+    # via -r dev-requirements.in
+mccabe==0.6.1
+    # via flake8
+mistune==0.8.3
+    # via nbconvert
+nbconvert==5.3.1
+    # via
+    #   jupyter
+    #   notebook
+nbformat==4.4.0
+    # via
+    #   ipywidgets
+    #   nbconvert
+    #   notebook
+notebook==5.4.0
+    # via
+    #   jupyter
+    #   widgetsnbextension
+numpy==1.14.0
+    # via matplotlib
+pandocfilters==1.4.2
+    # via nbconvert
+pathlib2==2.3.5
+    # via
+    #   ipython
+    #   pickleshare
+pexpect==4.3.1
+    # via ipython
+pickleshare==0.7.4
+    # via ipython
+pluggy==0.6.0
+    # via pytest
+prompt-toolkit==1.0.15
+    # via
+    #   ipython
+    #   jupyter-console
+ptyprocess==0.5.2
+    # via
+    #   pexpect
+    #   terminado
+py==1.5.2
+    # via pytest
+pycodestyle==2.3.1
+    # via flake8
+pyflakes==1.6.0
+    # via flake8
+pygments==2.2.0
+    # via
+    #   ipython
+    #   jupyter-console
+    #   nbconvert
+    #   qtconsole
+pyparsing==2.2.0
+    # via matplotlib
 pytest-cov==2.5.1
+    # via -r dev-requirements.in
 pytest-django==3.1.2
+    # via -r dev-requirements.in
 pytest==3.4.0
-python-dateutil==2.6.1    # via jupyter-client, matplotlib
-pytz==2017.3              # via matplotlib
-pyzmq==16.0.4             # via jupyter-client
-qtconsole==4.3.1          # via jupyter
-send2trash==1.4.2         # via notebook
-simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, html5lib, matplotlib, prompt-toolkit, pytest, python-dateutil, traitlets
-terminado==0.8.1          # via notebook
-testpath==0.3.1           # via nbconvert
-tornado==4.5.3            # via ipykernel, jupyter-client, notebook, terminado
-traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
-wcwidth==0.1.7            # via prompt-toolkit
-webencodings==0.5.1       # via html5lib
-widgetsnbextension==3.1.3  # via ipywidgets
+    # via
+    #   -r dev-requirements.in
+    #   pytest-cov
+    #   pytest-django
+python-dateutil==2.6.1
+    # via
+    #   jupyter-client
+    #   matplotlib
+pytz==2017.3
+    # via matplotlib
+pyzmq==16.0.4
+    # via jupyter-client
+qtconsole==4.3.1
+    # via jupyter
+scandir==1.10.0
+    # via pathlib2
+send2trash==1.4.2
+    # via notebook
+simplegeneric==0.8.1
+    # via ipython
+singledispatch==3.6.1
+    # via tornado
+six==1.11.0
+    # via
+    #   bleach
+    #   cycler
+    #   html5lib
+    #   matplotlib
+    #   pathlib2
+    #   prompt-toolkit
+    #   pytest
+    #   python-dateutil
+    #   singledispatch
+    #   traitlets
+subprocess32==3.5.4
+    # via matplotlib
+terminado==0.8.1
+    # via notebook
+testpath==0.3.1
+    # via nbconvert
+tornado==4.5.3
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   notebook
+    #   terminado
+traitlets==4.3.2
+    # via
+    #   ipykernel
+    #   ipython
+    #   ipywidgets
+    #   jupyter-client
+    #   jupyter-core
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
+wcwidth==0.1.7
+    # via prompt-toolkit
+webencodings==0.5.1
+    # via html5lib
+widgetsnbextension==3.1.3
+    # via ipywidgets
