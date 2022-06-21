@@ -17,7 +17,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "pandas==0.22.0",
-        "numpy==1.14.0",
+        "numpy==1.22.0",
         "django-pandas==0.5.0",
     ],
     long_description=long_description,
